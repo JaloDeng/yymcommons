@@ -47,7 +47,7 @@ public class ElasticSearchTestService {
 	public List<ElasticSearchTestEntity> findAll(Integer page, Integer size) {
 		List<ElasticSearchTestEntity> list = new ArrayList<>();
 		
-		elasticSearchTestRepository.findAll(new PageRequest(0, 10)).forEach(model -> {
+		elasticSearchTestRepository.findAll(new PageRequest(page, size)).forEach(model -> {
 			list.add(model);
 		});;
 		
