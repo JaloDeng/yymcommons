@@ -1,0 +1,7 @@
+group = 'com.yym.commons'
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-data-elasticsearch')
+	
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
